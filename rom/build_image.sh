@@ -1,7 +1,7 @@
 #!/bin/bash
 
-apt update
-apt install rsync -y
+sudo apt update
+sudo apt install rsync -y
 
 cd /root/crdroid
 
