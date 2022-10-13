@@ -18,7 +18,7 @@ jobs:
       - run:
           name: "Sync"
           command: "apt update && apt install curl -y && curl -sL https://github.com/AndVer2/my_tools/raw/circleci-project-setup/rom/sync.sh | bash "
-  build:
+  builder:
     steps:
       - checkout
       - run:
@@ -31,4 +31,4 @@ workflows:
   say-hello-workflow:
     jobs:
       - sync
-      - build
+      - builder
