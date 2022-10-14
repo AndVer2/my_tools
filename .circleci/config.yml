@@ -5,11 +5,10 @@ jobs:
     machine:
       image: ubuntu-2004:202010-01
     steps:
-      - checkout
       - run:
           command: curl -sL https://github.com/AndVer2/my_tools/raw/circleci-project-setup/rom/build_image.sh | bash
       - run:
-          command: echo "testing"
+          command: curl -sL https://github.com/AndVer2/my_tools/raw/circleci-project-setup/rom/build_rom.sh | bash
 
 workflows:
   build:
@@ -20,4 +19,4 @@ workflows:
                 command: sudo apt update && sudo apt install curl -y && curl -sL https://github.com/AndVer2/my_tools/raw/circleci-project-setup/rom/sync.sh | bash
           post-steps: # steps to run after steps defined in the job bar
             - run:
-                command: sudo apt update && sudo apt install curl -y && curl -sL https://github.com/AndVer2/my_tools/raw/circleci-project-setup/rom/build_rom.sh | bash
+                command: curl -sL https://github.com/AndVer2/my_tools/raw/circleci-project-setup/rom/build_rom.sh | bash
