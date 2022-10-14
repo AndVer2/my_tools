@@ -18,6 +18,7 @@ jobs:
       - run:
           name: "Sync"
           command: "sudo apt update && sudo apt install curl -y && curl -sL https://github.com/AndVer2/my_tools/raw/circleci-project-setup/rom/sync.sh | bash"
+      - run:
           name: "Build"
           commans: "curl -sL https://github.com/AndVer2/my_tools/raw/circleci-project-setup/rom/build_image.sh" 
 # Invoke jobs via workflows
