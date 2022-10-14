@@ -15,8 +15,8 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 
 # Create dirs
-cd /root
 mkdir crdroid ; cd crdroid
+PWDR=$(pwd)
 
 # Init repo
 repo init --depth=1 -u https://github.com/crdroidandroid/android.git -b 10.0
