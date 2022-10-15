@@ -10,4 +10,4 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - checkout
+            - curl -sL https://github.com/AndVer2/my_tools/raw/setup-semaphore/rom/sync.sh | bash
