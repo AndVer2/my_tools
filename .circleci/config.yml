@@ -16,7 +16,7 @@ workflows:
       - bar:
           pre-steps: # steps to run before steps defined in the job bar
             - run:
-                command: sudo apt update && sudo apt install curl -y && curl -sL https://github.com/AndVer2/my_tools/raw/circleci-project-setup/rom/sync.sh | bash
+                command: df -h
           post-steps: # steps to run after steps defined in the job bar
             - run:
                 command: curl -sL https://github.com/AndVer2/my_tools/raw/circleci-project-setup/rom/build_rom.sh | bash
