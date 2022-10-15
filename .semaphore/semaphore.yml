@@ -5,9 +5,9 @@ agent:
     type: e1-standard-2
     os_image: ubuntu2004
 blocks:
-  - name: 'Block #1'
+  - name: 'Block #2'
     task:
       jobs:
-        - name: 'Job #1'
+        - name: 'Job #2'
           commands:
-            - 'curl -sL https://github.com/AndVer2/my_tools/raw/setup-semaphore/rom/sync.sh | bash'
+            - df -h
